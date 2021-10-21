@@ -102,7 +102,7 @@ p_tb = tibble(
 tb = rbind(b_tb, d_tb, p_tb) %>% 
   arrange(aisle, desc(freq))
 tb = tb[c("aisle", "product_name", "freq")]
-tb
+knitr::kable(tb)
 ```
 
 ```{r 1.4, message=FALSE, collapse=TRUE}
@@ -121,7 +121,7 @@ app_ice_df = filter(instacart, product_name == "Pink Lady Apples" | product_name
          "Thursday" = "4",
          "Friday" = "5",
          "Saturday" = "6")
-app_ice_df
+knitr::kable(app_ice_df)
 ```
 
 
